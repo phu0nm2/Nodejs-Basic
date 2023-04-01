@@ -11,10 +11,6 @@ const port = process.env.PORT || 8000;
 
 configViewEngine(app);
 
-app.get("/", (req, res) => {
-  res.render("index.ejs");
-});
-
 server.listen(port, () => {
   console.log(`server running on port ${port}`);
 });
